@@ -36,11 +36,14 @@ export default class Game extends React.Component {
 
     render(){
         return (
-            <Board
-            board={this.state.board}
-            updateGame={this.updateGame}
-            >
-            </Board>
+            <div className="container">
+                <div className="restart-button" onClick={this.restartGame}>🙂</div>
+                <Board
+                board={this.state.board}
+                updateGame={this.updateGame}
+                >
+                </Board>
+            </div>
         )
     }
 }

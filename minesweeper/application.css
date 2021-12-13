@@ -1,3 +1,21 @@
+html {
+    height: 100%;
+    width: 100%;    
+}
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+}
+
 .tile {
     background-color: grey;
     border-style: inset;
@@ -31,4 +49,16 @@
 
 #modal {
     visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
+
+.restart-button {
+    text-align: center;
+}
+
+.restart-button:hover {
+    cursor: pointer;
+}
+
