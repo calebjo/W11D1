@@ -12,17 +12,15 @@ export default class Board extends React.Component {
             const rowMap = row.map((tile, tileIdx) => {
                 // debugger
                 return (
-                    <div key={tileIdx}>
-                        <Tile tileObj={tile} updateGame={this.props.updateGame}/>
-                    </div>
+                        <Tile key={tileIdx} tileObj={tile} updateGame={this.props.updateGame}/>
                 )
             })
             return (
-                <div key={rowIdx}>{rowMap}</div>
+                <div className="row" key={rowIdx}>{rowMap}</div>
             )
         });
         return (
-           <div id="test">{grid}</div>
+           <div id="game-container">{grid}</div>
         )
     }
 }

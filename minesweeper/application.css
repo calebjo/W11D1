@@ -2,6 +2,8 @@
     background-color: grey;
     border-style: inset;
     border-style: outset;
+    height: 20px;
+    width: 20px;
 }
 
 .bombed {
@@ -14,4 +16,13 @@
 
 .flagged {
     background-color: blue;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
 }
