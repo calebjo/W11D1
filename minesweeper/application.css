@@ -26,3 +26,9 @@
 .row {
     display: flex;
 }
+
+/* ------------------------------ */
+
+#modal {
+    visibility: hidden;
+}

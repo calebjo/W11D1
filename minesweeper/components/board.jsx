@@ -10,7 +10,6 @@ export default class Board extends React.Component {
     render(){
         const grid = this.props.board.grid.map((row, rowIdx) => {
             const rowMap = row.map((tile, tileIdx) => {
-                // debugger
                 return (
                         <Tile key={tileIdx} tileObj={tile} updateGame={this.props.updateGame}/>
                 )
