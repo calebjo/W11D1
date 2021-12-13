@@ -32,6 +32,8 @@ export default class Game extends React.Component {
 
     restartGame(){
         this.setState({ board: new Minesweeper.Board(8, 10) });
+        const modal = document.getElementById('modal');
+        modal.style.visibility = 'hidden';
     }
 
     render(){
