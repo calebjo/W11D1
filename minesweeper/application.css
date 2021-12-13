@@ -1,0 +1,17 @@
+.tile {
+    background-color: grey;
+    border-style: inset;
+    border-style: outset;
+}
+
+.bombed {
+    background-color: rgb(255, 0, 0);
+}
+
+.explored {
+    background-color: rgb(0, 255, 128);
+}
+
+.flagged {
+    background-color: blue;
+}
